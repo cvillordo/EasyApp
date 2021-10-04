@@ -8,6 +8,10 @@ const routes: Routes = [
   },  {
     path: 'estudiante',
     loadChildren: () => import('./tutor/estudiante/estudiante.module').then( m => m.EstudiantePageModule)
+  },
+  {
+    path: 'tut-est',
+    loadChildren: () => import('./tut-est/tut-est.module').then( m => m.TutEstPageModule)
   }
 
 ];
